@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F4B4F092144D34A0055FC28 /* Savage Badges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Savage Badges.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4B4F092144D34A0055FC28 /* savagebadges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = savagebadges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4B4F0C2144D34A0055FC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4B4F0E2144D34A0055FC28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F4B4F112144D34B0055FC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		4F4B4F0A2144D34A0055FC28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F4B4F092144D34A0055FC28 /* Savage Badges.app */,
+				4F4B4F092144D34A0055FC28 /* savagebadges.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F4B4F082144D34A0055FC28 /* Savage Badges */ = {
+		4F4B4F082144D34A0055FC28 /* savagebadges */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F4B4F1B2144D34C0055FC28 /* Build configuration list for PBXNativeTarget "Savage Badges" */;
+			buildConfigurationList = 4F4B4F1B2144D34C0055FC28 /* Build configuration list for PBXNativeTarget "savagebadges" */;
 			buildPhases = (
 				4F4B4F052144D34A0055FC28 /* Sources */,
 				4F4B4F062144D34A0055FC28 /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "Savage Badges";
+			name = savagebadges;
 			productName = "Savage Badges";
-			productReference = 4F4B4F092144D34A0055FC28 /* Savage Badges.app */;
+			productReference = 4F4B4F092144D34A0055FC28 /* savagebadges.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F4B4F042144D34A0055FC28 /* Build configuration list for PBXProject "Savage Badges" */;
+			buildConfigurationList = 4F4B4F042144D34A0055FC28 /* Build configuration list for PBXProject "savagebadges" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F4B4F082144D34A0055FC28 /* Savage Badges */,
+				4F4B4F082144D34A0055FC28 /* savagebadges */,
 			);
 		};
 /* End PBXProject section */
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F4B4F042144D34A0055FC28 /* Build configuration list for PBXProject "Savage Badges" */ = {
+		4F4B4F042144D34A0055FC28 /* Build configuration list for PBXProject "savagebadges" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F4B4F192144D34C0055FC28 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F4B4F1B2144D34C0055FC28 /* Build configuration list for PBXNativeTarget "Savage Badges" */ = {
+		4F4B4F1B2144D34C0055FC28 /* Build configuration list for PBXNativeTarget "savagebadges" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F4B4F1C2144D34C0055FC28 /* Debug */,
