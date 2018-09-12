@@ -30,6 +30,8 @@
 		4F4B4F222144D4280055FC28 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B4F212144D4280055FC28 /* LandingPageViewController.swift */; };
 		4F4B4F242144D58C0055FC28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B4F232144D58C0055FC28 /* LoginViewController.swift */; };
 		4F9586882148AC5E005A95CD /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586872148AC5E005A95CD /* SessionManager.swift */; };
+		4F95868A2148BAFB005A95CD /* AirTableSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586892148BAFB005A95CD /* AirTableSevice.swift */; };
+		4F95868D2148C150005A95CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95868C2148C150005A95CD /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		4F4B4F212144D4280055FC28 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		4F4B4F232144D58C0055FC28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F9586872148AC5E005A95CD /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		4F9586892148BAFB005A95CD /* AirTableSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTableSevice.swift; sourceTree = "<group>"; };
+		4F95868C2148C150005A95CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3BF7D3A18232942B26A881A /* Pods_savagebadges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_savagebadges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C506400741C72CF577F8A /* Pods-savagebadges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savagebadges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-savagebadges/Pods-savagebadges.debug.xcconfig"; sourceTree = "<group>"; };
 		E112A20B97AA3B157D10766A /* Pods-savagebadges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savagebadges.release.xcconfig"; path = "Pods/Target Support Files/Pods-savagebadges/Pods-savagebadges.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		4F4B4F0B2144D34A0055FC28 /* savagebadges */ = {
 			isa = PBXGroup;
 			children = (
+				4F95868B2148C12B005A95CD /* Model */,
 				4F9586862148AB7F005A95CD /* Services */,
 				4F1192BB21474D5C003682D1 /* Resources */,
 				4F4B4F1E2144D3B60055FC28 /* ViewControllers */,
@@ -150,8 +155,17 @@
 			isa = PBXGroup;
 			children = (
 				4F9586872148AC5E005A95CD /* SessionManager.swift */,
+				4F9586892148BAFB005A95CD /* AirTableSevice.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4F95868B2148C12B005A95CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F95868C2148C150005A95CD /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77F714234084E9E9DF5020E2 /* Pods */ = {
@@ -291,6 +305,8 @@
 				4F4B4F222144D4280055FC28 /* LandingPageViewController.swift in Sources */,
 				4F1192B02145B9B2003682D1 /* EarnedBadgesViewController.swift in Sources */,
 				4F1192B22145BA05003682D1 /* GiveBadgeViewController.swift in Sources */,
+				4F95868D2148C150005A95CD /* User.swift in Sources */,
+				4F95868A2148BAFB005A95CD /* AirTableSevice.swift in Sources */,
 				4F1192B62145BB00003682D1 /* ReceivedBadgesViewController.swift in Sources */,
 				4F1192B42145BA98003682D1 /* SelectBadgeViewController.swift in Sources */,
 				4F1192B82145BB56003682D1 /* MessageViewController.swift in Sources */,

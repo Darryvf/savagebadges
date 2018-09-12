@@ -43,6 +43,12 @@ class LoginViewController: UIViewController {
             }
     }
     
+    @IBAction func GetUsers(_ sender: Any) {
+        let airTableService = AirTableSevice()
+        airTableService.getUsers()
+        print("done")
+        
+    }
     @IBAction func Logout(_ sender: Any) {
         self.credentials = nil
     }
