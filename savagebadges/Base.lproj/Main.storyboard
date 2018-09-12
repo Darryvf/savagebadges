@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Peinture Fraiche.ttf">
+            <string>PeintureFraiche</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--LandingPageViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -18,25 +24,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On Landing Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lva-mv-P0R">
-                                <rect key="frame" x="151" y="306" width="131" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="bWJ-5Q-Obp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.48017437018808429" blue="0.36951160145964401" alpha="0.38" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savage" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="ISI-cc-In5">
+                                <rect key="frame" x="78.5" y="147" width="219" height="76"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
+                                <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.034113653004169464" green="0.021902233362197876" blue="0.078202657401561737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="4" height="-1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-nk-6QG">
-                                <rect key="frame" x="171.5" y="318.5" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7Z-dm-deu">
+                                <rect key="frame" x="137" y="378" width="103" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ede-ie-gX1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="45"/>
+                                <size key="titleShadowOffset" width="3" height="0.0"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.12707948684692383" green="0.60578596591949463" blue="0.082685463130474091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Ihe-S2-ONb" kind="show" id="yuS-J7-GN8"/>
+                                    <segue destination="Ihe-S2-ONb" kind="show" id="3Ss-oF-V7X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-IZ-WRV">
+                                <rect key="frame" x="109" y="482" width="158" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="SBf-rF-zY6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="45"/>
+                                <size key="titleShadowOffset" width="4" height="0.0"/>
+                                <state key="normal" title="SignUp">
+                                    <color key="titleColor" red="0.12707948684692383" green="0.60578596591949463" blue="0.082685463130474091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zBy-Qa-4ai" kind="show" id="zbw-v9-pD0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badges" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-no-PcU">
+                                <rect key="frame" x="78.5" y="222" width="218" height="78"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
+                                <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0067578662300000003" green="0.0086429495509999996" blue="0.044594701780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="4" height="-1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jYK-nk-6QG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2gm-NU-Yoo"/>
-                            <constraint firstItem="jYK-nk-6QG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ohn-p7-gO3"/>
+                            <constraint firstItem="c7Z-dm-deu" firstAttribute="top" secondItem="zuG-no-PcU" secondAttribute="bottom" constant="78" id="0JE-FP-rZT"/>
+                            <constraint firstItem="bWJ-5Q-Obp" firstAttribute="centerX" secondItem="c7Z-dm-deu" secondAttribute="centerX" id="0Yt-53-ubF"/>
+                            <constraint firstItem="zuG-no-PcU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="74x-w1-Azz"/>
+                            <constraint firstItem="c7Z-dm-deu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="JY2-NW-Q0j"/>
+                            <constraint firstItem="zuG-no-PcU" firstAttribute="centerX" secondItem="c7Z-dm-deu" secondAttribute="centerX" id="MQv-cs-gsD"/>
+                            <constraint firstItem="ISI-cc-In5" firstAttribute="leading" secondItem="zuG-no-PcU" secondAttribute="leading" id="Tok-7C-RL0"/>
+                            <constraint firstItem="6S6-IZ-WRV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="ZPi-OW-AOq"/>
+                            <constraint firstItem="bWJ-5Q-Obp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bst-Bj-gMv"/>
+                            <constraint firstItem="6S6-IZ-WRV" firstAttribute="top" secondItem="c7Z-dm-deu" secondAttribute="bottom" constant="47" id="eEW-Du-q0F"/>
+                            <constraint firstItem="bWJ-5Q-Obp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eYY-yC-bCa"/>
+                            <constraint firstItem="ISI-cc-In5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="gUA-HI-bUg"/>
+                            <constraint firstAttribute="trailing" secondItem="bWJ-5Q-Obp" secondAttribute="trailing" id="iee-nQ-js8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6S6-IZ-WRV" secondAttribute="bottom" constant="128" id="jPQ-S7-7vo"/>
+                            <constraint firstItem="c7Z-dm-deu" firstAttribute="centerX" secondItem="6S6-IZ-WRV" secondAttribute="centerX" id="rij-u9-06k"/>
+                            <constraint firstItem="bWJ-5Q-Obp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tGr-rK-D9O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -54,29 +108,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On login Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOW-Sa-MMD">
-                                <rect key="frame" x="166" y="290" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-n7-FCU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-oL-Ir4">
+                                <rect key="frame" x="77" y="147" width="220" height="76"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
+                                <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.01032221503" green="0.01032221503" blue="0.01032221503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="5" height="-1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-wr-jTW">
-                                <rect key="frame" x="156" y="397" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18n-ab-aDz">
+                                <rect key="frame" x="73" y="238" width="229" height="75"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
+                                <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0067578662300000003" green="0.0086429495509999996" blue="0.044594701780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="4" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LQ-wd-yov">
+                                <rect key="frame" x="124" y="424" width="130" height="72"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="60"/>
+                                <size key="titleShadowOffset" width="4" height="0.0"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.12707948684692383" green="0.60578596591949463" blue="0.082685463130474091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="zBy-Qa-4ai" kind="show" id="lgl-Dp-rRN"/>
+                                    <action selector="showLoginController:" destination="Ihe-S2-ONb" eventType="touchUpInside" id="aFz-kq-pNq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7J-RX-iHI">
+                                <rect key="frame" x="124" y="514" width="135" height="52"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="40"/>
+                                <size key="titleShadowOffset" width="4" height="0.0"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.12707948684692383" green="0.60578596591949463" blue="0.082685463130474091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Logout:" destination="Ihe-S2-ONb" eventType="touchUpInside" id="qg8-w7-qnb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="W7J-RX-iHI" secondAttribute="bottom" constant="101" id="AFA-cl-io0"/>
+                            <constraint firstItem="18n-ab-aDz" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leadingMargin" constant="57" id="Epj-xX-y23"/>
+                            <constraint firstItem="7LQ-wd-yov" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leadingMargin" constant="108" id="HJY-93-xzB"/>
+                            <constraint firstItem="7LQ-wd-yov" firstAttribute="top" secondItem="sPI-kl-ZrA" secondAttribute="topMargin" constant="360" id="IZ9-Kg-XWL"/>
+                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="77" id="Ij9-Yu-DQ8"/>
+                            <constraint firstItem="18n-ab-aDz" firstAttribute="top" secondItem="3Gc-oL-Ir4" secondAttribute="bottom" constant="15" id="JNT-1o-itZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Gc-oL-Ir4" secondAttribute="trailing" constant="62" id="Kmf-MK-HCa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="18n-ab-aDz" secondAttribute="trailing" constant="57" id="T1j-Pj-4GC"/>
+                            <constraint firstItem="hbS-n7-FCU" firstAttribute="top" secondItem="sPI-kl-ZrA" secondAttribute="top" constant="64" id="VbQ-es-YKq"/>
+                            <constraint firstItem="18n-ab-aDz" firstAttribute="top" secondItem="3Gc-oL-Ir4" secondAttribute="bottom" constant="15" id="Vgk-La-yo4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7LQ-wd-yov" secondAttribute="trailing" constant="105" id="Z3X-Pb-XHE"/>
+                            <constraint firstAttribute="trailing" secondItem="hbS-n7-FCU" secondAttribute="trailing" id="gow-9T-Rqo"/>
+                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="3Gc-oL-Ir4" secondAttribute="trailing" constant="78" id="gtF-m2-4rs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7J-RX-iHI" secondAttribute="trailing" constant="100" id="hag-dx-bXc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3Gc-oL-Ir4" secondAttribute="bottom" constant="444" id="iXs-aB-3bR"/>
+                            <constraint firstItem="W7J-RX-iHI" firstAttribute="top" secondItem="7LQ-wd-yov" secondAttribute="bottom" constant="18" id="nVa-5l-uPN"/>
+                            <constraint firstItem="hbS-n7-FCU" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leading" id="nY6-m4-Oau"/>
+                            <constraint firstItem="W7J-RX-iHI" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leadingMargin" constant="108" id="pEt-kJ-bOB"/>
+                            <constraint firstItem="W7J-RX-iHI" firstAttribute="top" secondItem="7LQ-wd-yov" secondAttribute="bottom" constant="18" id="q2v-Px-KOu"/>
+                            <constraint firstAttribute="bottom" secondItem="hbS-n7-FCU" secondAttribute="bottom" id="rhO-X0-RYS"/>
+                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="top" secondItem="amm-2V-a2g" secondAttribute="top" constant="83" id="tO5-cj-cyY"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="18n-ab-aDz" secondAttribute="bottom" constant="354" id="wsy-n3-RsK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="amm-2V-a2g"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwy-Je-851" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2266" y="27"/>
+            <point key="canvasLocation" x="2264.8000000000002" y="26.53673163418291"/>
         </scene>
         <!--SignupViewController-->
         <scene sceneID="kJL-hY-fju">
@@ -86,22 +192,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-Kd-Wn0">
-                                <rect key="frame" x="202" y="383" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="hiC-VC-U4m">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adZ-u9-E1y">
+                                <rect key="frame" x="62" y="112" width="251" height="75"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
+                                <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.15153966639480887" green="0.19381113017285223" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="4" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXe-KW-5hF">
+                                <rect key="frame" x="103" y="542" width="169" height="60"/>
+                                <state key="normal" title="Submit" image="submit-button-png-25794 (1)"/>
                                 <connections>
-                                    <segue destination="BKl-Q2-hga" kind="show" id="vFg-hS-YbM"/>
+                                    <segue destination="BKl-Q2-hga" kind="show" id="TKI-6S-3wx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-89-CUU">
+                                <rect key="frame" x="71" y="195" width="261" height="75"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
+                                <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="4" height="-1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="bottom" secondItem="yXe-KW-5hF" secondAttribute="bottom" constant="65" id="3ur-SU-N1O"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="bottom" secondItem="hiC-VC-U4m" secondAttribute="bottom" id="66Q-Tg-y7M"/>
+                            <constraint firstItem="hiC-VC-U4m" firstAttribute="top" secondItem="abe-cf-Uhg" secondAttribute="top" id="6H7-XV-JCf"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="trailing" secondItem="yXe-KW-5hF" secondAttribute="trailing" constant="103" id="EbV-5C-obE"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="bottom" secondItem="adZ-u9-E1y" secondAttribute="bottom" constant="480" id="FSc-Vd-Yeg"/>
+                            <constraint firstItem="hiC-VC-U4m" firstAttribute="leading" secondItem="abe-cf-Uhg" secondAttribute="leading" id="IU7-zz-3mJ"/>
+                            <constraint firstItem="eFf-89-CUU" firstAttribute="top" secondItem="adZ-u9-E1y" secondAttribute="bottom" constant="34" id="Per-an-4yv"/>
+                            <constraint firstItem="yXe-KW-5hF" firstAttribute="leading" secondItem="abe-cf-Uhg" secondAttribute="leading" constant="103" id="Q0o-o2-47q"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="bottom" secondItem="eFf-89-CUU" secondAttribute="bottom" constant="371" id="QIk-JI-3ap"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="trailing" secondItem="eFf-89-CUU" secondAttribute="trailing" constant="57" id="Zku-g1-1qD"/>
+                            <constraint firstItem="adZ-u9-E1y" firstAttribute="leading" secondItem="abe-cf-Uhg" secondAttribute="leading" constant="62" id="aAG-2h-UEm"/>
+                            <constraint firstItem="yXe-KW-5hF" firstAttribute="top" secondItem="eFf-89-CUU" secondAttribute="bottom" constant="246" id="gT6-Fg-F0A"/>
+                            <constraint firstItem="eFf-89-CUU" firstAttribute="leading" secondItem="abe-cf-Uhg" secondAttribute="leading" constant="57" id="jVn-in-Xha"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="trailing" secondItem="adZ-u9-E1y" secondAttribute="trailing" constant="62" id="kIO-tH-uFl"/>
+                            <constraint firstItem="adZ-u9-E1y" firstAttribute="top" secondItem="abe-cf-Uhg" secondAttribute="top" constant="48" id="vI6-oB-smf"/>
+                            <constraint firstItem="abe-cf-Uhg" firstAttribute="trailing" secondItem="hiC-VC-U4m" secondAttribute="trailing" id="voh-uK-EKu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="abe-cf-Uhg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mka-cE-JaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2914" y="27"/>
+            <point key="canvasLocation" x="2912.8000000000002" y="26.53673163418291"/>
         </scene>
         <!--IntakeViewController-->
         <scene sceneID="6hQ-3u-ua6">
@@ -144,14 +287,27 @@
                                     <segue destination="ZYc-P7-ZHf" kind="show" id="rZS-Qx-TQM"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="Klx-hT-bNs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-jN-kf2">
+                                <rect key="frame" x="16" y="79" width="152" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="skN-Mf-1uH" firstAttribute="trailing" secondItem="Klx-hT-bNs" secondAttribute="trailing" id="LEr-Kf-sUv"/>
+                            <constraint firstItem="Klx-hT-bNs" firstAttribute="leading" secondItem="skN-Mf-1uH" secondAttribute="leading" id="a1Y-lX-l7Z"/>
+                            <constraint firstItem="skN-Mf-1uH" firstAttribute="bottom" secondItem="Klx-hT-bNs" secondAttribute="bottom" id="fmI-6h-s1c"/>
+                            <constraint firstItem="Klx-hT-bNs" firstAttribute="top" secondItem="skN-Mf-1uH" secondAttribute="top" id="pGW-Fd-cbl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="skN-Mf-1uH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67a-ca-00y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4186" y="27"/>
+            <point key="canvasLocation" x="4184.8000000000002" y="26.53673163418291"/>
         </scene>
         <!--EarnedBadgesViewController-->
         <scene sceneID="mvl-6g-RPq">
@@ -287,4 +443,8 @@
             <point key="canvasLocation" x="668" y="692.20389805097454"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1-redbrick-update" width="1000" height="1500"/>
+        <image name="submit-button-png-25794 (1)" width="600" height="198"/>
+    </resources>
 </document>

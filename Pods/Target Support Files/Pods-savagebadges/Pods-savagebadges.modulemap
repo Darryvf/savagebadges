@@ -1,0 +1,6 @@
+framework module Pods_savagebadges {
+  umbrella header "Pods-savagebadges-umbrella.h"
+
+  export *
+  module * { export * }
+}
