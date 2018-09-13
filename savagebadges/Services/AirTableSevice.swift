@@ -9,10 +9,11 @@
 import Foundation
 
 class AirTableSevice: NSObject {
-    func getUsers() {
+    func getUsers(){
         let headers = [
+            "Authorization": "Basic Og==",
             "cache-control": "no-cache",
-            "postman-token": "34e24daf-ee72-d6ae-048e-5d9eeabd150b"
+
         ]
         
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.airtable.com/v0/appd658AaGaAXmAeI/User?api_key=keyeyl7q3HzLXF5A6")! as URL,
@@ -30,23 +31,85 @@ class AirTableSevice: NSObject {
                 print(httpResponse)
                 guard let data = data else { return }
                 //Implement JSON decoding and parsing
-                do {
-                    let json = try? JSONSerialization.jsonObject(with: data, options:[])
-                    print(json)
-                    //Decode retrived data with JSONDecoder and assing type of Article object
-//                    let usersData = try JSONDecoder().decode([User].self, from: data)
-//                    print(usersData)
-                    //Get back to the main queue
-                    DispatchQueue.main.async {
-                        //print(articlesData)
-//                        self.articles = articlesData
-//                        self.collectionView?.reloadData()
-                    }
-                    
-                } catch let jsonError {
-                    print(jsonError)
+                let decoder = JSONDecoder()
+                guard let users = try? decoder.decode(Response.self, from: data)
+                    else{
+                        print(error)
+                        return
                 }
+                print(users)
    
+            }
+        })
+        
+        
+        dataTask.resume()
+    }
+    func getUser(userID: String, completion: @escaping ((Response1) -> Void)) {
+        let headers = [
+            "Authorization": "Basic Og==",
+            "cache-control": "no-cache",
+            
+            ]
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.airtable.com/v0/appd658AaGaAXmAeI/User/" + userID + "?api_key=keyeyl7q3HzLXF5A6")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse)
+                guard let data = data else { return }
+                //Implement JSON decoding and parsing
+                let decoder = JSONDecoder()
+                guard let user = try? decoder.decode(Response1.self, from: data)
+                    else{
+                        print(error)
+                        return
+                }
+                print(user)
+                completion (user)
+            }
+        })
+        
+        
+        dataTask.resume()
+    }
+    
+    func getBadges(completion: @escaping ((Response2) -> Void)) {
+        let headers = [
+            "Authorization": "Basic Og==",
+            "cache-control": "no-cache",
+            
+            ]
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.airtable.com/v0/appd658AaGaAXmAeI/Badge?api_key=keyeyl7q3HzLXF5A6")! as URL,
+                                          cachePolicy: .useProtocolCachePolicy,
+                                          timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse)
+                guard let data = data else { return }
+                //Implement JSON decoding and parsing
+                let decoder = JSONDecoder()
+                guard let badge = try? decoder.decode(Response2.self, from: data)
+                    else{
+                        print(error)
+                        return
+                }
+                print(badge)
+                completion (badge)
             }
         })
         

@@ -39,15 +39,21 @@ class LoginViewController: UIViewController {
                     self.credentials = credentials
                     print("Credentials: \(credentials)")
                     print("Credentials access token: \(credentials.accessToken)")
+                    self.performSegue(withIdentifier: "SegueToDashboard", sender: nil)
                 }
             }
     }
     
     @IBAction func GetUsers(_ sender: Any) {
         let airTableService = AirTableSevice()
-        airTableService.getUsers()
+        airTableService.getUser(userID: "Hello", completion: {[weak self] (user: Response1) in self?.useData(user: user)})
         print("done")
         
+    }
+    
+    func useData(user: Response1){
+        print(user)
+        print("hi")
     }
     @IBAction func Logout(_ sender: Any) {
         self.credentials = nil

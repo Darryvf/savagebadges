@@ -22,6 +22,21 @@
 		4F1192C321483487003682D1 /* GANG BANG CRIME.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192C221483486003682D1 /* GANG BANG CRIME.ttf */; };
 		4F1192C521487067003682D1 /* Peinture Fraiche.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192C421487066003682D1 /* Peinture Fraiche.ttf */; };
 		4F1192C7214870A3003682D1 /* GRAFFITI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192C6214870A3003682D1 /* GRAFFITI.TTF */; };
+		4F3ACA382149E5E7005658E6 /* Thumbnails1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA312149E5E6005658E6 /* Thumbnails1.swift */; };
+		4F3ACA392149E5E7005658E6 /* Full1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA322149E5E6005658E6 /* Full1.swift */; };
+		4F3ACA3A2149E5E7005658E6 /* Image1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA332149E5E6005658E6 /* Image1.swift */; };
+		4F3ACA3B2149E5E7005658E6 /* Small1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA342149E5E6005658E6 /* Small1.swift */; };
+		4F3ACA3C2149E5E7005658E6 /* Fields1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA352149E5E6005658E6 /* Fields1.swift */; };
+		4F3ACA3D2149E5E7005658E6 /* Response1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA362149E5E6005658E6 /* Response1.swift */; };
+		4F3ACA3E2149E5E7005658E6 /* Large1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA372149E5E6005658E6 /* Large1.swift */; };
+		4F3ACA48214A005E005658E6 /* Fields2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA40214A005E005658E6 /* Fields2.swift */; };
+		4F3ACA49214A005E005658E6 /* Small2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA41214A005E005658E6 /* Small2.swift */; };
+		4F3ACA4A214A005E005658E6 /* Thumbnails2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA42214A005E005658E6 /* Thumbnails2.swift */; };
+		4F3ACA4B214A005E005658E6 /* Large2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA43214A005E005658E6 /* Large2.swift */; };
+		4F3ACA4C214A005E005658E6 /* Image2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA44214A005E005658E6 /* Image2.swift */; };
+		4F3ACA4D214A005E005658E6 /* Full2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA45214A005E005658E6 /* Full2.swift */; };
+		4F3ACA4E214A005E005658E6 /* Records2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA46214A005E005658E6 /* Records2.swift */; };
+		4F3ACA4F214A005E005658E6 /* Response2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA47214A005E005658E6 /* Response2.swift */; };
 		4F4B4F0D2144D34A0055FC28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B4F0C2144D34A0055FC28 /* AppDelegate.swift */; };
 		4F4B4F0F2144D34A0055FC28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B4F0E2144D34A0055FC28 /* ViewController.swift */; };
 		4F4B4F122144D34B0055FC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4B4F102144D34B0055FC28 /* Main.storyboard */; };
@@ -31,7 +46,14 @@
 		4F4B4F242144D58C0055FC28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B4F232144D58C0055FC28 /* LoginViewController.swift */; };
 		4F9586882148AC5E005A95CD /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586872148AC5E005A95CD /* SessionManager.swift */; };
 		4F95868A2148BAFB005A95CD /* AirTableSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586892148BAFB005A95CD /* AirTableSevice.swift */; };
-		4F95868D2148C150005A95CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95868C2148C150005A95CD /* User.swift */; };
+		4F9586A62149DCD2005A95CD /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95869E2149DCD2005A95CD /* Records.swift */; };
+		4F9586A72149DCD2005A95CD /* Full.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95869F2149DCD2005A95CD /* Full.swift */; };
+		4F9586A82149DCD2005A95CD /* Small.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A02149DCD2005A95CD /* Small.swift */; };
+		4F9586A92149DCD2005A95CD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A12149DCD2005A95CD /* Response.swift */; };
+		4F9586AA2149DCD2005A95CD /* Large.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A22149DCD2005A95CD /* Large.swift */; };
+		4F9586AB2149DCD2005A95CD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A32149DCD2005A95CD /* Image.swift */; };
+		4F9586AC2149DCD2005A95CD /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A42149DCD2005A95CD /* Thumbnails.swift */; };
+		4F9586AD2149DCD2005A95CD /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A52149DCD2005A95CD /* Fields.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +71,21 @@
 		4F1192C221483486003682D1 /* GANG BANG CRIME.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GANG BANG CRIME.ttf"; path = "../../../../Downloads/gang_bang_crime/GANG BANG CRIME.ttf"; sourceTree = "<group>"; };
 		4F1192C421487066003682D1 /* Peinture Fraiche.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Peinture Fraiche.ttf"; path = "../../../../../Downloads/Peinture Fraiche.ttf"; sourceTree = "<group>"; };
 		4F1192C6214870A3003682D1 /* GRAFFITI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = GRAFFITI.TTF; path = ../../../../../Downloads/GRAFFITI.TTF; sourceTree = "<group>"; };
+		4F3ACA312149E5E6005658E6 /* Thumbnails1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnails1.swift; sourceTree = "<group>"; };
+		4F3ACA322149E5E6005658E6 /* Full1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Full1.swift; sourceTree = "<group>"; };
+		4F3ACA332149E5E6005658E6 /* Image1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image1.swift; sourceTree = "<group>"; };
+		4F3ACA342149E5E6005658E6 /* Small1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Small1.swift; sourceTree = "<group>"; };
+		4F3ACA352149E5E6005658E6 /* Fields1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields1.swift; sourceTree = "<group>"; };
+		4F3ACA362149E5E6005658E6 /* Response1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response1.swift; sourceTree = "<group>"; };
+		4F3ACA372149E5E6005658E6 /* Large1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Large1.swift; sourceTree = "<group>"; };
+		4F3ACA40214A005E005658E6 /* Fields2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fields2.swift; path = savagebadges/BadgeModel/Fields2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA41214A005E005658E6 /* Small2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Small2.swift; path = savagebadges/BadgeModel/Small2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA42214A005E005658E6 /* Thumbnails2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Thumbnails2.swift; path = savagebadges/BadgeModel/Thumbnails2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA43214A005E005658E6 /* Large2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Large2.swift; path = savagebadges/BadgeModel/Large2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA44214A005E005658E6 /* Image2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image2.swift; path = savagebadges/BadgeModel/Image2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA45214A005E005658E6 /* Full2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Full2.swift; path = savagebadges/BadgeModel/Full2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA46214A005E005658E6 /* Records2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Records2.swift; path = savagebadges/BadgeModel/Records2.swift; sourceTree = SOURCE_ROOT; };
+		4F3ACA47214A005E005658E6 /* Response2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response2.swift; path = savagebadges/BadgeModel/Response2.swift; sourceTree = SOURCE_ROOT; };
 		4F4B4F092144D34A0055FC28 /* savagebadges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = savagebadges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4B4F0C2144D34A0055FC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F4B4F0E2144D34A0055FC28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +97,14 @@
 		4F4B4F232144D58C0055FC28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F9586872148AC5E005A95CD /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		4F9586892148BAFB005A95CD /* AirTableSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTableSevice.swift; sourceTree = "<group>"; };
-		4F95868C2148C150005A95CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F95869E2149DCD2005A95CD /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		4F95869F2149DCD2005A95CD /* Full.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Full.swift; sourceTree = "<group>"; };
+		4F9586A02149DCD2005A95CD /* Small.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Small.swift; sourceTree = "<group>"; };
+		4F9586A12149DCD2005A95CD /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4F9586A22149DCD2005A95CD /* Large.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Large.swift; sourceTree = "<group>"; };
+		4F9586A32149DCD2005A95CD /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		4F9586A42149DCD2005A95CD /* Thumbnails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		4F9586A52149DCD2005A95CD /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
 		A3BF7D3A18232942B26A881A /* Pods_savagebadges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_savagebadges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C506400741C72CF577F8A /* Pods-savagebadges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savagebadges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-savagebadges/Pods-savagebadges.debug.xcconfig"; sourceTree = "<group>"; };
 		E112A20B97AA3B157D10766A /* Pods-savagebadges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savagebadges.release.xcconfig"; path = "Pods/Target Support Files/Pods-savagebadges/Pods-savagebadges.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +138,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4F3ACA3F214A002F005658E6 /* BadgeModel */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ACA40214A005E005658E6 /* Fields2.swift */,
+				4F3ACA45214A005E005658E6 /* Full2.swift */,
+				4F3ACA44214A005E005658E6 /* Image2.swift */,
+				4F3ACA43214A005E005658E6 /* Large2.swift */,
+				4F3ACA46214A005E005658E6 /* Records2.swift */,
+				4F3ACA47214A005E005658E6 /* Response2.swift */,
+				4F3ACA41214A005E005658E6 /* Small2.swift */,
+				4F3ACA42214A005E005658E6 /* Thumbnails2.swift */,
+			);
+			name = BadgeModel;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4F4B4F002144D34A0055FC28 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +177,8 @@
 		4F4B4F0B2144D34A0055FC28 /* savagebadges */ = {
 			isa = PBXGroup;
 			children = (
+				4F3ACA3F214A002F005658E6 /* BadgeModel */,
+				4F9586AE2149E1AD005A95CD /* Model2 */,
 				4F95868B2148C12B005A95CD /* Model */,
 				4F9586862148AB7F005A95CD /* Services */,
 				4F1192BB21474D5C003682D1 /* Resources */,
@@ -163,9 +225,30 @@
 		4F95868B2148C12B005A95CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4F95868C2148C150005A95CD /* User.swift */,
+				4F9586A52149DCD2005A95CD /* Fields.swift */,
+				4F95869F2149DCD2005A95CD /* Full.swift */,
+				4F9586A32149DCD2005A95CD /* Image.swift */,
+				4F9586A22149DCD2005A95CD /* Large.swift */,
+				4F95869E2149DCD2005A95CD /* Records.swift */,
+				4F9586A12149DCD2005A95CD /* Response.swift */,
+				4F9586A02149DCD2005A95CD /* Small.swift */,
+				4F9586A42149DCD2005A95CD /* Thumbnails.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4F9586AE2149E1AD005A95CD /* Model2 */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ACA352149E5E6005658E6 /* Fields1.swift */,
+				4F3ACA322149E5E6005658E6 /* Full1.swift */,
+				4F3ACA332149E5E6005658E6 /* Image1.swift */,
+				4F3ACA372149E5E6005658E6 /* Large1.swift */,
+				4F3ACA362149E5E6005658E6 /* Response1.swift */,
+				4F3ACA342149E5E6005658E6 /* Small1.swift */,
+				4F3ACA312149E5E6005658E6 /* Thumbnails1.swift */,
+			);
+			path = Model2;
 			sourceTree = "<group>";
 		};
 		77F714234084E9E9DF5020E2 /* Pods */ = {
@@ -297,21 +380,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3ACA48214A005E005658E6 /* Fields2.swift in Sources */,
+				4F3ACA382149E5E7005658E6 /* Thumbnails1.swift in Sources */,
+				4F3ACA4A214A005E005658E6 /* Thumbnails2.swift in Sources */,
+				4F9586AD2149DCD2005A95CD /* Fields.swift in Sources */,
 				4F1192AC2145B745003682D1 /* IntakeViewController.swift in Sources */,
+				4F3ACA4F214A005E005658E6 /* Response2.swift in Sources */,
+				4F3ACA49214A005E005658E6 /* Small2.swift in Sources */,
 				4F1192AE2145B834003682D1 /* DashboardViewController.swift in Sources */,
+				4F9586AC2149DCD2005A95CD /* Thumbnails.swift in Sources */,
 				4F4B4F242144D58C0055FC28 /* LoginViewController.swift in Sources */,
+				4F9586A62149DCD2005A95CD /* Records.swift in Sources */,
+				4F3ACA3A2149E5E7005658E6 /* Image1.swift in Sources */,
+				4F3ACA4C214A005E005658E6 /* Image2.swift in Sources */,
+				4F9586A92149DCD2005A95CD /* Response.swift in Sources */,
 				4F4B4F0F2144D34A0055FC28 /* ViewController.swift in Sources */,
 				4F1192AA2145B3DE003682D1 /* SignupViewController.swift in Sources */,
+				4F3ACA3B2149E5E7005658E6 /* Small1.swift in Sources */,
+				4F3ACA392149E5E7005658E6 /* Full1.swift in Sources */,
+				4F3ACA3C2149E5E7005658E6 /* Fields1.swift in Sources */,
+				4F9586A82149DCD2005A95CD /* Small.swift in Sources */,
+				4F3ACA4D214A005E005658E6 /* Full2.swift in Sources */,
 				4F4B4F222144D4280055FC28 /* LandingPageViewController.swift in Sources */,
+				4F9586AB2149DCD2005A95CD /* Image.swift in Sources */,
 				4F1192B02145B9B2003682D1 /* EarnedBadgesViewController.swift in Sources */,
+				4F3ACA3D2149E5E7005658E6 /* Response1.swift in Sources */,
+				4F3ACA4B214A005E005658E6 /* Large2.swift in Sources */,
+				4F9586A72149DCD2005A95CD /* Full.swift in Sources */,
 				4F1192B22145BA05003682D1 /* GiveBadgeViewController.swift in Sources */,
-				4F95868D2148C150005A95CD /* User.swift in Sources */,
 				4F95868A2148BAFB005A95CD /* AirTableSevice.swift in Sources */,
+				4F9586AA2149DCD2005A95CD /* Large.swift in Sources */,
 				4F1192B62145BB00003682D1 /* ReceivedBadgesViewController.swift in Sources */,
+				4F3ACA4E214A005E005658E6 /* Records2.swift in Sources */,
 				4F1192B42145BA98003682D1 /* SelectBadgeViewController.swift in Sources */,
 				4F1192B82145BB56003682D1 /* MessageViewController.swift in Sources */,
 				4F4B4F0D2144D34A0055FC28 /* AppDelegate.swift in Sources */,
 				4F9586882148AC5E005A95CD /* SessionManager.swift in Sources */,
+				4F3ACA3E2149E5E7005658E6 /* Large1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
