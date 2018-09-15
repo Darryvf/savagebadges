@@ -41,11 +41,11 @@ class SelectBadgeViewController: UIViewController {
         print(badge)
         print("hi")
         DispatchQueue.main.async {
-            self.labelName.text = badge.records[0].fields.Badge_Name
+            self.labelName.text = badge.records[5].fields.Badge_Name
             self.labelName.sizeToFit()
-            self.labelDisc.text = badge.records[0].fields.Badge_Description
+            self.labelDisc.text = badge.records[5].fields.Badge_Description
             self.labelDisc.sizeToFit()
-            let url = URL(string: badge.records[0].fields.Image[0].thumbnails.large.url)
+            let url = URL(string: badge.records[5].fields.Image[0].thumbnails.large.url)
             let data = try? Data(contentsOf: url!)
             self.badge.image = UIImage(data: data!)
             
