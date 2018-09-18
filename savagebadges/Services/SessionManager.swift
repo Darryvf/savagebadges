@@ -70,6 +70,7 @@ class SessionManager {
 
     func logout() -> Bool {
         // Remove credentials from KeyChain
+        
         self.credentials = nil
         return self.credentialsManager.clear()
     }

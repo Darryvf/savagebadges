@@ -12,9 +12,15 @@ import Auth0
 
 class LoginViewController: UIViewController {
     var credentials:Credentials?
+    var credentialsManager:CredentialsManager?
+    static var isUserLoggedIn:Bool = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -24,10 +30,22 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func showLoginController(_ sender: UIButton) {
+        self.showLogin()
+    }
+    
+    func showLogin(){
         guard let clientInfo = plistValues(bundle: Bundle.main) else {return}
+        
+        
+        if (!LoginViewController.isUserLoggedIn ){
+            self.credentials = nil
+            self.credentialsManager?.clear()
+        }
+        var hasVal = self.credentialsManager?.hasValid()
+        
         Auth0
             .webAuth()
-            .scope("openid profile")
+            .scope("openid profile offline_access")
             .audience("https://savagebadges.auth0.com/userinfo")
             .start {
                 switch $0 {
@@ -39,25 +57,48 @@ class LoginViewController: UIViewController {
                     self.credentials = credentials
                     print("Credentials: \(credentials)")
                     print("Credentials access token: \(credentials.accessToken)")
-                    self.performSegue(withIdentifier: "SegueToDashboard", sender: nil)
+                    var isValid = self.credentialsManager?.hasValid()
+                    if(!SessionManager.shared.store(credentials: credentials)) {
+                        print("Failed to store credentials")
+                    } else {
+                        print("Stored credentials")
+                        LoginViewController.isUserLoggedIn = true;
+                        self.performSegue(withIdentifier: "SegueToDashboard", sender: nil)
+//                        SessionManager.shared.retrieveProfile { error in
+//                            DispatchQueue.main.async {
+//                                guard error == nil else {
+//                                    print("Failed to retrieve profile: \(String(describing: error))")
+//                                    //return self.showLogin()
+//                                }
+//                                self.performSegue(withIdentifier: "ShowProfileNonAnimated", sender: nil)
+//                            }
+//                        }
+                    }
                 }
+                
+                
             }
     }
     
-    @IBAction func GetUsers(_ sender: Any) {
-        let airTableService = AirTableSevice()
-        airTableService.getUser(userID: "Hello", completion: {[weak self] (user: Response1) in self?.useData(user: user)})
-        print("done")
+    func useData(something: Bool){
+        print(something)
+        print("in useData from logout")
+        LoginViewController.isUserLoggedIn = false
+        self.credentials = nil
+        var clearedCredentials = self.credentialsManager!.clear()
         
+
     }
     
-    func useData(user: Response1){
-        print(user)
-        print("hi")
-    }
     @IBAction func Logout(_ sender: Any) {
-        self.credentials = nil
+    
+//        Auth0.authentication().revoke(refreshToken: (self.credentials?.refreshToken)!)
+        Auth0.webAuth().clearSession(federated: true, callback: {[weak self] (something: Bool) in self?.useData(something: something)})
+        
+        
+        
     }
+
 
     func plistValues(bundle: Bundle) -> (clientId: String, domain: String)? {
         guard

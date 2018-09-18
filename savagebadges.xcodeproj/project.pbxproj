@@ -16,12 +16,8 @@
 		4F1192B42145BA98003682D1 /* SelectBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1192B32145BA98003682D1 /* SelectBadgeViewController.swift */; };
 		4F1192B62145BB00003682D1 /* ReceivedBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1192B52145BB00003682D1 /* ReceivedBadgesViewController.swift */; };
 		4F1192B82145BB56003682D1 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1192B72145BB56003682D1 /* MessageViewController.swift */; };
-		4F1192BA2146FDD5003682D1 /* urban decay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192B92146FDD4003682D1 /* urban decay.ttf */; };
 		4F1192BD21474DCA003682D1 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192BC21474DCA003682D1 /* Auth0.plist */; };
 		4F1192BF21475B9E003682D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192BE21475B9E003682D1 /* Podfile */; };
-		4F1192C321483487003682D1 /* GANG BANG CRIME.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192C221483486003682D1 /* GANG BANG CRIME.ttf */; };
-		4F1192C521487067003682D1 /* Peinture Fraiche.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192C421487066003682D1 /* Peinture Fraiche.ttf */; };
-		4F1192C7214870A3003682D1 /* GRAFFITI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4F1192C6214870A3003682D1 /* GRAFFITI.TTF */; };
 		4F3ACA382149E5E7005658E6 /* Thumbnails1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA312149E5E6005658E6 /* Thumbnails1.swift */; };
 		4F3ACA392149E5E7005658E6 /* Full1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA322149E5E6005658E6 /* Full1.swift */; };
 		4F3ACA3A2149E5E7005658E6 /* Image1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3ACA332149E5E6005658E6 /* Image1.swift */; };
@@ -54,6 +50,9 @@
 		4F9586AB2149DCD2005A95CD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A32149DCD2005A95CD /* Image.swift */; };
 		4F9586AC2149DCD2005A95CD /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A42149DCD2005A95CD /* Thumbnails.swift */; };
 		4F9586AD2149DCD2005A95CD /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9586A52149DCD2005A95CD /* Fields.swift */; };
+		5FD061112150184000B43DD6 /* Graffiti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FD061102150184000B43DD6 /* Graffiti.ttf */; };
+		5FD061132150185B00B43DD6 /* Peinture Fraiche.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FD061122150185B00B43DD6 /* Peinture Fraiche.ttf */; };
+		5FD061152150186D00B43DD6 /* urban decay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FD061142150186D00B43DD6 /* urban decay.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,12 +64,8 @@
 		4F1192B32145BA98003682D1 /* SelectBadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBadgeViewController.swift; sourceTree = "<group>"; };
 		4F1192B52145BB00003682D1 /* ReceivedBadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedBadgesViewController.swift; sourceTree = "<group>"; };
 		4F1192B72145BB56003682D1 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		4F1192B92146FDD4003682D1 /* urban decay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "urban decay.ttf"; path = "../../../../../Downloads/urban decay.ttf"; sourceTree = "<group>"; };
 		4F1192BC21474DCA003682D1 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		4F1192BE21475B9E003682D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4F1192C221483486003682D1 /* GANG BANG CRIME.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GANG BANG CRIME.ttf"; path = "../../../../Downloads/gang_bang_crime/GANG BANG CRIME.ttf"; sourceTree = "<group>"; };
-		4F1192C421487066003682D1 /* Peinture Fraiche.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Peinture Fraiche.ttf"; path = "../../../../../Downloads/Peinture Fraiche.ttf"; sourceTree = "<group>"; };
-		4F1192C6214870A3003682D1 /* GRAFFITI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = GRAFFITI.TTF; path = ../../../../../Downloads/GRAFFITI.TTF; sourceTree = "<group>"; };
 		4F3ACA312149E5E6005658E6 /* Thumbnails1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnails1.swift; sourceTree = "<group>"; };
 		4F3ACA322149E5E6005658E6 /* Full1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Full1.swift; sourceTree = "<group>"; };
 		4F3ACA332149E5E6005658E6 /* Image1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image1.swift; sourceTree = "<group>"; };
@@ -105,6 +100,10 @@
 		4F9586A32149DCD2005A95CD /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4F9586A42149DCD2005A95CD /* Thumbnails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
 		4F9586A52149DCD2005A95CD /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		5FD061102150184000B43DD6 /* Graffiti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Graffiti.ttf; sourceTree = "<group>"; };
+		5FD061122150185B00B43DD6 /* Peinture Fraiche.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Peinture Fraiche.ttf"; sourceTree = "<group>"; };
+		5FD061142150186D00B43DD6 /* urban decay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "urban decay.ttf"; sourceTree = "<group>"; };
+		5FD06118215018A600B43DD6 /* GANG BANG CRIME.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GANG BANG CRIME.ttf"; sourceTree = "<group>"; };
 		A3BF7D3A18232942B26A881A /* Pods_savagebadges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_savagebadges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C506400741C72CF577F8A /* Pods-savagebadges.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savagebadges.debug.xcconfig"; path = "Pods/Target Support Files/Pods-savagebadges/Pods-savagebadges.debug.xcconfig"; sourceTree = "<group>"; };
 		E112A20B97AA3B157D10766A /* Pods-savagebadges.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savagebadges.release.xcconfig"; path = "Pods/Target Support Files/Pods-savagebadges/Pods-savagebadges.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,7 +156,7 @@
 		4F4B4F002144D34A0055FC28 = {
 			isa = PBXGroup;
 			children = (
-				4F1192C221483486003682D1 /* GANG BANG CRIME.ttf */,
+				5FD06118215018A600B43DD6 /* GANG BANG CRIME.ttf */,
 				4F1192BE21475B9E003682D1 /* Podfile */,
 				4F4B4F0B2144D34A0055FC28 /* savagebadges */,
 				4F4B4F0A2144D34A0055FC28 /* Products */,
@@ -186,9 +185,9 @@
 				4F4B4F0C2144D34A0055FC28 /* AppDelegate.swift */,
 				4F4B4F0E2144D34A0055FC28 /* ViewController.swift */,
 				4F4B4F102144D34B0055FC28 /* Main.storyboard */,
-				4F1192C6214870A3003682D1 /* GRAFFITI.TTF */,
-				4F1192C421487066003682D1 /* Peinture Fraiche.ttf */,
-				4F1192B92146FDD4003682D1 /* urban decay.ttf */,
+				5FD061102150184000B43DD6 /* Graffiti.ttf */,
+				5FD061122150185B00B43DD6 /* Peinture Fraiche.ttf */,
+				5FD061142150186D00B43DD6 /* urban decay.ttf */,
 				4F4B4F132144D34C0055FC28 /* Assets.xcassets */,
 				4F4B4F152144D34C0055FC28 /* LaunchScreen.storyboard */,
 				4F4B4F182144D34C0055FC28 /* Info.plist */,
@@ -320,15 +319,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F1192C7214870A3003682D1 /* GRAFFITI.TTF in Resources */,
+				5FD061112150184000B43DD6 /* Graffiti.ttf in Resources */,
+				5FD061132150185B00B43DD6 /* Peinture Fraiche.ttf in Resources */,
 				4F1192BF21475B9E003682D1 /* Podfile in Resources */,
 				4F1192BD21474DCA003682D1 /* Auth0.plist in Resources */,
-				4F1192C321483487003682D1 /* GANG BANG CRIME.ttf in Resources */,
 				4F4B4F172144D34C0055FC28 /* LaunchScreen.storyboard in Resources */,
-				4F1192BA2146FDD5003682D1 /* urban decay.ttf in Resources */,
 				4F4B4F142144D34C0055FC28 /* Assets.xcassets in Resources */,
-				4F1192C521487067003682D1 /* Peinture Fraiche.ttf in Resources */,
 				4F4B4F122144D34B0055FC28 /* Main.storyboard in Resources */,
+				5FD061152150186D00B43DD6 /* urban decay.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,7 +44,11 @@ class DashboardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func returnToLoginPage(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        //self.performSegue(withIdentifier: "SegueToLoginViewController", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
