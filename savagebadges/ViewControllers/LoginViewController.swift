@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
             .webAuth()
             .scope("openid profile offline_access")
             .audience("https://savagebadges.auth0.com/userinfo")
+            .parameters(["prompt":"login"])
             .start {
                 switch $0 {
                 case .failure(let error):
@@ -93,7 +94,7 @@ class LoginViewController: UIViewController {
     @IBAction func Logout(_ sender: Any) {
     
 //        Auth0.authentication().revoke(refreshToken: (self.credentials?.refreshToken)!)
-        Auth0.webAuth().clearSession(federated: true, callback: {[weak self] (something: Bool) in self?.useData(something: something)})
+        Auth0.webAuth().clearSession(federated: false, callback: {[weak self] (something: Bool) in self?.useData(something: something)})
         
         
         

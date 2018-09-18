@@ -27,7 +27,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-n7-FCU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Savage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-oL-Ir4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-oL-Ir4">
                                 <rect key="frame" x="87" y="147" width="232" height="76"/>
                                 <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
                                 <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,10 +35,10 @@
                                 <color key="shadowColor" red="0.01032221503" green="0.01032221503" blue="0.01032221503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="5" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18n-ab-aDz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18n-ab-aDz">
                                 <rect key="frame" x="87" y="238" width="232" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="N20-Hc-zKn"/>
+                                    <constraint firstAttribute="height" constant="75" id="aoW-QY-22C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="75"/>
                                 <color key="textColor" red="0.022888241335749626" green="0.7549363374710083" blue="0.98659509420394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,18 +46,6 @@
                                 <color key="shadowColor" red="0.0067578662300000003" green="0.0086429495509999996" blue="0.044594701780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LQ-wd-yov">
-                                <rect key="frame" x="116" y="426" width="155" height="72"/>
-                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="60"/>
-                                <size key="titleShadowOffset" width="4" height="0.0"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.12707948684692383" green="0.60578596591949463" blue="0.082685463130474091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showLoginController:" destination="Ihe-S2-ONb" eventType="touchUpInside" id="aFz-kq-pNq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7J-RX-iHI">
                                 <rect key="frame" x="100" y="512" width="159" height="52"/>
                                 <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="40"/>
@@ -70,28 +58,37 @@
                                     <action selector="Logout:" destination="Ihe-S2-ONb" eventType="touchUpInside" id="qg8-w7-qnb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LQ-wd-yov">
+                                <rect key="frame" x="87" y="424" width="155" height="72"/>
+                                <fontDescription key="fontDescription" name="PeintureFraiche" family="Peinture Fraiche" pointSize="60"/>
+                                <size key="titleShadowOffset" width="4" height="0.0"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.12707948684692383" green="0.60578596591949463" blue="0.082685463130474091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLoginController:" destination="Ihe-S2-ONb" eventType="touchUpInside" id="aFz-kq-pNq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="centerX" secondItem="3Gc-oL-Ir4" secondAttribute="centerX" id="2Ni-gr-XFM"/>
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="2PU-8I-2ca"/>
-                            <constraint firstAttribute="trailing" secondItem="hbS-n7-FCU" secondAttribute="trailing" id="57M-an-ylJ"/>
-                            <constraint firstItem="18n-ab-aDz" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="9yf-IG-g6b"/>
-                            <constraint firstItem="7LQ-wd-yov" firstAttribute="top" secondItem="18n-ab-aDz" secondAttribute="bottom" constant="113" id="Ats-b8-c06"/>
-                            <constraint firstItem="18n-ab-aDz" firstAttribute="top" secondItem="3Gc-oL-Ir4" secondAttribute="bottom" constant="15" id="Hpc-57-ptY"/>
-                            <constraint firstItem="W7J-RX-iHI" firstAttribute="top" secondItem="7LQ-wd-yov" secondAttribute="bottom" constant="14" id="M0q-kc-7Ie"/>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leading" id="PJ5-eT-NvY"/>
-                            <constraint firstItem="W7J-RX-iHI" firstAttribute="top" secondItem="7LQ-wd-yov" secondAttribute="bottom" constant="14" id="TVk-NW-0t1"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="W7J-RX-iHI" secondAttribute="trailing" constant="100" id="UTZ-dM-5iu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7LQ-wd-yov" secondAttribute="trailing" constant="88" id="UsB-eT-bdq"/>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="top" secondItem="sPI-kl-ZrA" secondAttribute="top" id="Vbk-C4-8Tu"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="W7J-RX-iHI" secondAttribute="trailing" constant="116" id="b7D-V8-cYA"/>
-                            <constraint firstItem="7LQ-wd-yov" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leadingMargin" constant="100" id="bOx-R3-2bn"/>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="bottom" secondItem="amm-2V-a2g" secondAttribute="bottom" id="gbH-Yi-p58"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="bottom" secondItem="W7J-RX-iHI" secondAttribute="bottom" constant="103" id="sN5-Go-afl"/>
-                            <constraint firstItem="W7J-RX-iHI" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="100" id="uSm-s1-svQ"/>
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="top" secondItem="amm-2V-a2g" secondAttribute="top" constant="83" id="v3Y-QZ-qN4"/>
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="centerX" secondItem="18n-ab-aDz" secondAttribute="centerX" id="xSw-2L-Y5k"/>
+                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="0RQ-Z5-TiX"/>
+                            <constraint firstAttribute="trailing" secondItem="hbS-n7-FCU" secondAttribute="trailing" id="4Td-3I-TB4"/>
+                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="trailing" secondItem="18n-ab-aDz" secondAttribute="trailing" id="8Wz-5A-vu6"/>
+                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="18n-ab-aDz" secondAttribute="leading" id="Eii-Za-TYV"/>
+                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="7LQ-wd-yov" secondAttribute="trailing" constant="104" id="F66-QX-XD2"/>
+                            <constraint firstItem="7LQ-wd-yov" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="Gx7-7J-Nvc"/>
+                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="3Gc-oL-Ir4" secondAttribute="trailing" constant="56" id="Hdi-07-IPV"/>
+                            <constraint firstItem="W7J-RX-iHI" firstAttribute="top" secondItem="7LQ-wd-yov" secondAttribute="bottom" constant="14" id="Lh9-mT-xTj"/>
+                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="W7J-RX-iHI" secondAttribute="trailing" constant="116" id="TSE-PM-T4k"/>
+                            <constraint firstItem="hbS-n7-FCU" firstAttribute="top" secondItem="sPI-kl-ZrA" secondAttribute="top" id="Y3h-GX-gVi"/>
+                            <constraint firstItem="hbS-n7-FCU" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leading" id="b2P-JR-DMQ"/>
+                            <constraint firstItem="hbS-n7-FCU" firstAttribute="bottom" secondItem="amm-2V-a2g" secondAttribute="bottom" id="dWj-dX-2Rf"/>
+                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="top" secondItem="amm-2V-a2g" secondAttribute="top" constant="83" id="ja6-xT-hIR"/>
+                            <constraint firstItem="amm-2V-a2g" firstAttribute="bottom" secondItem="W7J-RX-iHI" secondAttribute="bottom" constant="103" id="mws-bg-zO6"/>
+                            <constraint firstItem="W7J-RX-iHI" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="100" id="ptL-UO-Z5W"/>
+                            <constraint firstItem="18n-ab-aDz" firstAttribute="top" secondItem="3Gc-oL-Ir4" secondAttribute="bottom" constant="15" id="qUg-ux-vTX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="amm-2V-a2g"/>
                     </view>
@@ -403,7 +400,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-Sx-kiD">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savage Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1L-Ts-xEy">
                                 <rect key="frame" x="28" y="77" width="306.5" height="50"/>
@@ -493,12 +490,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-redbrick-update" translatesAutoresizingMaskIntoConstraints="NO" id="AuJ-n4-kgj">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="762-la-yw8">
                                 <rect key="frame" x="47" y="168" width="48" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.49577268835616439" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -506,20 +503,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-He-4Vi">
                                 <rect key="frame" x="47" y="321" width="73" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.49689640410958902" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-fI-S2u">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-fI-S2u">
                                 <rect key="frame" x="16" y="197" width="104" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a50-T7-nlX" userLabel="Label2">
                                 <rect key="frame" x="227" y="168" width="76" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.50371896404109584" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -527,20 +524,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhy-XU-NMm" userLabel="Labeldisc2">
                                 <rect key="frame" x="243" y="321" width="73" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.49657534246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnc-UK-5la" userLabel="Image View2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnc-UK-5la" userLabel="Image View2">
                                 <rect key="frame" x="227" y="197" width="104" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.49721746575342468" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3H-Rt-WNk" userLabel="Label3">
                                 <rect key="frame" x="19" y="434" width="104" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -548,15 +545,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-ig-X53" userLabel="Labeldisc3">
                                 <rect key="frame" x="19" y="592" width="104" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7a-iX-OZf" userLabel="Image View3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7a-iX-OZf" userLabel="Image View3">
                                 <rect key="frame" x="19" y="466" width="104" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.31" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Savage Badges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA3-Gg-A46">
                                 <rect key="frame" x="34" y="77" width="306.5" height="50"/>
@@ -689,7 +686,7 @@
         <image name="submit-button-png-25794 (1)" width="600" height="198"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z2R-W1-bEI"/>
+        <segue reference="2fN-hx-GZG"/>
         <segue reference="eZR-kY-nig"/>
     </inferredMetricsTieBreakers>
 </document>
