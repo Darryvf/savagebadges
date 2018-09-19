@@ -73,27 +73,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-<<<<<<< Updated upstream
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="0RQ-Z5-TiX"/>
-                            <constraint firstAttribute="trailing" secondItem="hbS-n7-FCU" secondAttribute="trailing" id="4Td-3I-TB4"/>
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="trailing" secondItem="18n-ab-aDz" secondAttribute="trailing" id="8Wz-5A-vu6"/>
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="18n-ab-aDz" secondAttribute="leading" id="Eii-Za-TYV"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="7LQ-wd-yov" secondAttribute="trailing" constant="104" id="F66-QX-XD2"/>
-                            <constraint firstItem="7LQ-wd-yov" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="Gx7-7J-Nvc"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="3Gc-oL-Ir4" secondAttribute="trailing" constant="56" id="Hdi-07-IPV"/>
-                            <constraint firstItem="W7J-RX-iHI" firstAttribute="top" secondItem="7LQ-wd-yov" secondAttribute="bottom" constant="14" id="Lh9-mT-xTj"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="W7J-RX-iHI" secondAttribute="trailing" constant="116" id="TSE-PM-T4k"/>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="top" secondItem="sPI-kl-ZrA" secondAttribute="top" id="Y3h-GX-gVi"/>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="leading" secondItem="sPI-kl-ZrA" secondAttribute="leading" id="b2P-JR-DMQ"/>
-                            <constraint firstItem="hbS-n7-FCU" firstAttribute="bottom" secondItem="amm-2V-a2g" secondAttribute="bottom" id="dWj-dX-2Rf"/>
-                            <constraint firstItem="3Gc-oL-Ir4" firstAttribute="top" secondItem="amm-2V-a2g" secondAttribute="top" constant="83" id="ja6-xT-hIR"/>
-                            <constraint firstItem="amm-2V-a2g" firstAttribute="bottom" secondItem="W7J-RX-iHI" secondAttribute="bottom" constant="103" id="mws-bg-zO6"/>
-                            <constraint firstItem="W7J-RX-iHI" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="100" id="ptL-UO-Z5W"/>
-                            <constraint firstItem="18n-ab-aDz" firstAttribute="top" secondItem="3Gc-oL-Ir4" secondAttribute="bottom" constant="15" id="qUg-ux-vTX"/>
-=======
                             <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="7LQ-wd-yov" secondAttribute="trailing" constant="104" id="3wf-Rd-ADS"/>
                             <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="74c-JO-ZxD"/>
-                            <constraint firstItem="7LQ-wd-yov" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="116" id="Bwu-58-heV"/>
+                            <constraint firstItem="7LQ-wd-yov" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="87" id="Bwu-58-heV"/>
                             <constraint firstItem="3Gc-oL-Ir4" firstAttribute="leading" secondItem="18n-ab-aDz" secondAttribute="leading" id="C8Q-Ex-spi"/>
                             <constraint firstItem="hbS-n7-FCU" firstAttribute="top" secondItem="sPI-kl-ZrA" secondAttribute="top" id="D1t-hz-UJg"/>
                             <constraint firstItem="amm-2V-a2g" firstAttribute="trailing" secondItem="W7J-RX-iHI" secondAttribute="trailing" constant="116" id="Drq-3J-Oo5"/>
@@ -107,7 +89,6 @@
                             <constraint firstItem="amm-2V-a2g" firstAttribute="bottom" secondItem="W7J-RX-iHI" secondAttribute="bottom" constant="103" id="pXh-FJ-bBw"/>
                             <constraint firstItem="hbS-n7-FCU" firstAttribute="bottom" secondItem="amm-2V-a2g" secondAttribute="bottom" id="rEh-0I-95u"/>
                             <constraint firstItem="W7J-RX-iHI" firstAttribute="leading" secondItem="amm-2V-a2g" secondAttribute="leading" constant="100" id="zf0-ZL-5nf"/>
->>>>>>> Stashed changes
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="amm-2V-a2g"/>
                     </view>
