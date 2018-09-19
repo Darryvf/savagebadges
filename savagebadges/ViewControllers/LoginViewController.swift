@@ -64,23 +64,36 @@ class LoginViewController: UIViewController {
                     } else {
                         print("Stored credentials")
                         LoginViewController.isUserLoggedIn = true;
-                        self.performSegue(withIdentifier: "SegueToDashboard", sender: nil)
-//                        SessionManager.shared.retrieveProfile { error in
-//                            DispatchQueue.main.async {
-//                                guard error == nil else {
-//                                    print("Failed to retrieve profile: \(String(describing: error))")
-//                                    //return self.showLogin()
-//                                }
-//                                self.performSegue(withIdentifier: "ShowProfileNonAnimated", sender: nil)
-//                            }
-//                        }
-                    }
+                        SessionManager.shared.retrieveProfile { error in
+                            DispatchQueue.main.async {
+                                guard error == nil else {
+                                    print("Failed to retrieve profile: \(String(describing: error))")
+                                    return self.showLogin()
+                                }
+                                print("Profile is:  \(SessionManager.shared.profile)")
+                                self.performSegue(withIdentifier: "SegueToDashboard", sender: nil)
+                            }
+                        }
+
+                     }
                 }
-                
                 
             }
     }
     
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "SegueToDashboard" {
+            if let vc = segue.destination as? DashboardViewController {
+                let userSub = SessionManager.shared.profile?.sub
+                vc.userSub = userSub
+            }
+        }
+     
+    }
+
+
     func useData(something: Bool){
         print(something)
         print("in useData from logout")

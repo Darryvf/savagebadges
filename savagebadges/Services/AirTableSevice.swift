@@ -9,14 +9,21 @@
 import Foundation
 
 class AirTableSevice: NSObject {
-    func getUsers(){
+    func getUsers(accountNumber:String? = nil, completion: @escaping ((Response) -> Void)){
         let headers = [
             "Authorization": "Basic Og==",
             "cache-control": "no-cache",
 
         ]
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.airtable.com/v0/appd658AaGaAXmAeI/User?api_key=keyeyl7q3HzLXF5A6")! as URL,
+        var filterParm: String? = ""
+        if let accountNumber = accountNumber {
+            let accountFilter = "AccountNumber = '\(accountNumber)'"
+            let uuencodedAccountFilter = accountFilter.addingPercentEncoding(withAllowedCharacters: .alphanumerics)
+            filterParm = "&filterByFormula=\(uuencodedAccountFilter ?? "")"
+        }
+        
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.airtable.com/v0/appd658AaGaAXmAeI/User?api_key=keyeyl7q3HzLXF5A6\(filterParm ?? " ")")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "GET"
@@ -38,6 +45,7 @@ class AirTableSevice: NSObject {
                         return
                 }
                 print(users)
+                completion (users)
    
             }
         })

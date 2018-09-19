@@ -13,6 +13,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
+    var userSub:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,21 @@ class DashboardViewController: UIViewController {
     }
     func GetUser() {
         let airTableService = AirTableSevice()
-        airTableService.getUser(userID: "recX0ymx5QcUt1ZMJ", completion: {[weak self] (user: Response1) in self?.useData(user: user)})
+        airTableService.getUsers(accountNumber: self.userSub, completion: {[weak self] (users: Response) in self?.useData(users: users)})
         print("done")
+        
+    }
+    
+    func useData(users: Response){
+        print(users)
+        print("hi")
+        DispatchQueue.main.async {
+            self.firstName.text = users.records[0].fields.FirstName
+            self.lastName.text = users.records[0].fields.LastName
+            let url = SessionManager.shared.profile?.picture
+            let data = try? Data(contentsOf: url!)
+            self.profileImage.image = UIImage(data: data!)
+        }
         
     }
     

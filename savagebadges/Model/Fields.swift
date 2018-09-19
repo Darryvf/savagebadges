@@ -11,7 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 struct Fields: Codable {
 	let Email: String
 	let Gender: String
-	let Nickname: String
+	let AccountNumber: String
 	let FirstName: String
 	let UserID: Int
 	let Image: [Image]
